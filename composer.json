@@ -2,7 +2,7 @@
     "name": "fixstacks/module-zero-klarna",
     "description": "Zero for Magento Open Source: Klarna on its Hosted Payment Page for Zero Checkout: pay now, pay later or in instalments; authorised at checkout, captured on invoice.",
     "type": "magento2-module",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
