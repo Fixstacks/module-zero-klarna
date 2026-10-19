@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+    Copyright © 2026 Roman Pasichnyk
+    SPDX-License-Identifier: OSL-3.0 OR AFL-3.0
+
+    payment_action is required: Payment::place() calls initialize() (which
+    creates the Klarna sessions) only when the method reports one.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <zero_klarna>
+                <active>0</active>
+                <model>Zero\Klarna\Model\Payment</model>
+                <title>Klarna: pay now, later or in instalments</title>
+                <password backend_model="Magento\Config\Model\Config\Backend\Encrypted"/>
+                <region>eu</region>
+                <playground>1</playground>
+                <order_status>pending_payment</order_status>
+                <payment_action>order</payment_action>
+                <allowspecific>0</allowspecific>
+                <sort_order>35</sort_order>
+                <group>offline</group>
+            </zero_klarna>
+        </payment>
+    </default>
+</config>
