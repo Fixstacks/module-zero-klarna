@@ -39,6 +39,8 @@ Part of [`fixstacks/zero`](https://fixstacks.com/zero), which installs the Zero 
 3. **status_update** (`zero_klarna/payment/callback`): for a customer who
    paid and never came back; the session is read from Klarna again. Not sent
    from a development site.
+   Handled now or from the queue: Zero Checkout > Payment Webhooks
+   (the Zero_Checkout README).
 
 **Capture:** invoice the order with **Capture Online** (in part too):
 Klarna takes the money then (`captures`). **Cancel** before capturing
