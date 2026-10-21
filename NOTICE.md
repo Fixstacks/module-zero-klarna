@@ -1,4 +1,4 @@
-# fixstacks/module-zero-klarna — licensing
+# zerofront/module-zero-klarna — licensing
 
 Copyright © 2026 Roman Pasichnyk.
 
